@@ -142,3 +142,7 @@ def main() -> None:
 
     # load model
     model.load_state_dict(torch.load('mnist_model.pt'))
+
+
+if __name__ == '__main__':
+    main()

@@ -85,3 +85,7 @@ def main():
     for x, y in zip(X, Y):
         y_pred = model(x)
         print(f"x: {x}, y: {y}, y_pred: {int(y_pred>0.5)}")
+
+
+if __name__ == '__main__':
+    main()
