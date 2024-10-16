@@ -34,6 +34,8 @@ class Perceptron:
 
 
 def main():
+    np.random.seed(2023)
+    
     X = np.array([
         [0, 0],
         [0, 1],

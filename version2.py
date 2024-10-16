@@ -68,6 +68,9 @@ class Network(nn.Module):
 
 
 def main():
+    np.random.seed(2023)
+    torch.manual_seed(2023)
+    
     X = torch.tensor([
         [0, 0],
         [0, 1],
@@ -81,9 +84,6 @@ def main():
         [1],
         [0]
     ]).float()
-
-    # model = Perceptron(input_dim=2)
-    # model.fit(X, Y, epochs=10000, learning_rate=0.1)
 
     # hyper-parameters
     lr = 0.01

@@ -1,4 +1,3 @@
-import math
 import numpy as np
 import torch
 import torch.nn as nn
@@ -33,6 +32,9 @@ class Network(nn.Module):
 
 
 def main():
+    np.random.seed(2023)
+    torch.manual_seed(2023)
+    
     X = torch.tensor([
         [0, 0],
         [0, 1],

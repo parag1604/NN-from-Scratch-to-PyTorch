@@ -112,6 +112,8 @@ def request_handler(model, data):
 
 
 def main() -> None:
+    torch.manual_seed(2023)
+    
     # Load data
     train_loader, test_loader = get_data('mnist', batch_size=64)
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
